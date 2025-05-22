@@ -13,7 +13,7 @@ int estado  = 0;
 
 void loop() {
 int ahora = millis ();
-if (ahora - antes > 1000) {
+if (ahora - antes > 500) {
   digitalWrite(LED_BUILTIN, estado);
   estado = !estado;
   antes = ahora;  
